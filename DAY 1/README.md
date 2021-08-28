@@ -33,7 +33,7 @@ For ``Object/Hash``
 
 ## Few extra things I explored related to Redis besides what was discussed:
 
-1.  If you want to update the value of a pre-existing key, write the same set command again with the key name and just change the value to whatever you want now. This logic will work for every data type: string, hash, set, array
+1.  If you want to update the value of a pre-existing key, write the same set command again with the key name and just change the value to whatever you want now. This logic will work for every data type: string, hash, set, array.
 
 2.  To add an element in a set, we use SADD. Similarly, the command to remove an element from the set:
 
