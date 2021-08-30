@@ -21,4 +21,4 @@ Used to compute a single result from a set of input values.
 
 -> Where clause: `select {column} from {tableName} where {conditons...};`
 -> LIKE works with strings only. So we need to type cast data types accordingly.
--> For type casting, use `::`
+-> For type casting, use `::`.
