@@ -53,6 +53,6 @@ You'll receive an error saying, "Maximum call stack size exceeded". It occurs wh
 Call stack [provided by V8] -> Web API [provided by browser] -> Callback Queue [provided by JavaScript]
 
 Event Loop : 
-If( Stack is empty && Callback queue has anything ):
+If ( Stack is empty && Callback queue has anything ):
     Push the operation from CallBac Queue to the Call Stack for execution.
 
