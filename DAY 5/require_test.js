@@ -10,14 +10,14 @@ class Chai {
   }
 }
 
-module.exports = Chai;
+module.exports = {Chai, FingerChips};
 /* module.exports = Chai, FingerChips; does not work, only cahi gets exported
 Hence, output-> 
 Chai peelo frandss.
 undefined
 Chai peelo frandss.
 undefined */
-module.exports = FingerChips;
+// module.exports = FingerChips;
 
 /*
 module.exports = Chai;
