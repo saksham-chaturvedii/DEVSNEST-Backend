@@ -9,7 +9,9 @@
   "author": "Saksham",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@hapi/hapi": "^20.1.5",
+    "express": "^4.17.1",
+    "hapi": "^18.1.0"
   },
   "devDependencies": {}
 }
