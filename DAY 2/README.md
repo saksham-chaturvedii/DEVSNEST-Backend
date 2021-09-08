@@ -1,5 +1,5 @@
-DB == Drives
-Schemas == Folders
+`DB == Drives` <br>
+`Schemas == Folders`
 
 Create a Schema: `create schema {schemaName};`<br><br>
 Create a table in a Schema: `create table {schemaName}.{tableName};`<br><br>
@@ -12,7 +12,7 @@ else: `drop schema {schemaName} cascade;`<br><br>
 
 ### A schema is a collection of database objects, (tables).
 
-View a table's content: select * from {tablename};<br><br>
+View a table's content: select \* from {tablename};<br><br>
 
 ### Aggregate Functions:
 
