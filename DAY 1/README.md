@@ -49,6 +49,12 @@ For `Object/Hash`
 -> sudo service postgresql start\
 -> psql -U postgres<br><br>
 
+While running the second command, if you face any issues like ``Peer authentication failed``, try these:\
+-> sudo service postgresql start\
+-> sudo su postgres\
+-> psql<br><br>
+This will connect you to the user ``postgres`` and the database ``postgres``. The connection type will be ``local`` and the method will be ``peer``.
+
 -> Check list of databases: `\l`\
 -> Check list of users: `\du`\
 -> Check the current user and database: `\conninfo`\
