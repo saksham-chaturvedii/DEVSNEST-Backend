@@ -71,7 +71,7 @@ app.get("/admin-dashboard2", AdminDashboard);
 /*
 -> For perfomance sake, GET calls are cached by default by the browser.
 
-But, this is a security issue if we try getting passwords using a GET call. As the value to the password key query will be stored in cache and can easily be accessed from there by anyone using the developer tools.
+But, this is a security issue if we try getting passwords using a GET call. As the value to the password key query will be transmitted within the query string of the requested URL and might get stored in the browser's or the web server's cache. Hence, a vulnerability.
 
 -> POST calls do not get cached.    
 -> To get query data from GET calls we used "req.query".
