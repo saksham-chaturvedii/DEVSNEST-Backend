@@ -1,6 +1,2 @@
-*
-!public
-!routes
-!views
-!.gitignore
-!app.js
+/node_modules
+/app1.pem
