@@ -1,19 +1,15 @@
 var express = require("express");
 var path = require("path");
 
-var indexRouter = require("./routes/index");
-// var albumRouter = require("./routes/users");
-
+var albumRouter = require("./routes/album");
+var downloadRouter = require("./routes/download");
 var app = express();
 
 // view engine setup
-// app.set("views", path.join(__dirname, "views"));
-// app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
-app.use("/", indexRouter);
-// app.use("/album", albumRouter);
-
-// app.use(, indexRouter);
-// app.use("/users", usersRouter);
-
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/albums", albumRouter);
+app.use("/download/images", downloadRouter);
 module.exports = app;
