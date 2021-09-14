@@ -40,23 +40,15 @@ img {
     font-size: 0.9rem;
   }
   .album-container {
-    display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
-    height: 100%;
   }
 
   .img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 25rem;
     padding: 4rem 0rem 0rem 0rem;
   }
   img {
-    width: 100%;
     padding: 0rem 3rem 0rem 3rem;
-    margin-bottom: 0.5rem;
   }
 }
