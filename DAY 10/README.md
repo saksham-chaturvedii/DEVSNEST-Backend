@@ -1,1 +1,0 @@
-## THA: Read about other encryptions
