@@ -28,8 +28,12 @@ const register = async (req, res) => {
      *
      * As per Documentation,
      */
-    const savedUser = await User.create({ fullName: fullName, email: email, password: hash });
-    res.status(200).send("User registered.");
+    const savedUser = await User.create({
+      fullName: fullName,
+      email: email,
+      password: hash,
+    });
+    res.status(200).send(savedUser);
   } catch (err) {
     res.status(500).send("Something went wrong.");
   }
