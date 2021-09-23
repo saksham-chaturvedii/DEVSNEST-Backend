@@ -11,14 +11,15 @@ const passVerify = require("../utils/passVerify");
 const checksBeforeRegister = (req, res, next) => {
   const { email, password, confirmPassword } = req.body;
   if (
-    typeof email == "string" &&
+    typeof email === "string" &&
     email.length > 0 &&
-    typeof password == "string" &&
+    typeof password === "string" &&
     emailVerify(email) &&
     passVerify(password) &&
     password === confirmPassword
   ) {
-    next();
+    // res.status(200).send("Data Validity Confirmed");
+    next()
   } else {
     res.status(401).send("Initial Checks Failed.");
   }
