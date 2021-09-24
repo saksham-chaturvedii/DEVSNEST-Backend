@@ -1,10 +1,14 @@
 var express = require("express");
+const session = require("express-session");
 var router = express.Router();
 var registerToDB = require("../controllers/register");
 const checksBeforeRegister = require("../middlewares/registerChecks.js");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
+  const sess = req.session; // We got the whole of our Redis database here and can now conviniently add keys.
+  console.log(req.session);
+  sess.halua = "gajar";
   res.render("index", { title: "Express" });
 });
 
