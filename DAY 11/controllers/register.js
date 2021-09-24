@@ -30,7 +30,7 @@ const register = async (req, res) => {
      */
     const savedUser = await User.create({
       fullName: fullName,
-      email: email,
+      email: email.toLowerCase(),
       password: hash,
     });
     res.status(200).send(savedUser);

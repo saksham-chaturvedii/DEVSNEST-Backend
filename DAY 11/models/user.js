@@ -24,21 +24,26 @@ const sequelize = require("../database/index");
  * Both can be different. Usually Table name is
  * in plural (Users) and model name in singular.
  */
-const User = sequelize.define("Users", {
-  fullName: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
+const User = sequelize.define("User",
+  {
+    fullName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
 
-  email: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
 
-  password: {
-    type: DataTypes.STRING,
-    allowNull: false,
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
-});
+  {
+    freezeTableName: true,
+  }
+);
 
 module.exports = User;
